@@ -1,0 +1,211 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{11B36}
+\author{ee24btech11055 - Sai Akhila Reddy Turpu}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+36. For $x\in\mathbb{R}$, $f(x)=|log2-sinx|$ and 
+$g(x)=f(f(x))$, then 
+\hfill{(JEE M 2016)}
+\begin{enumerate}[label=(\alph*)]
+\item g'(0) = -cos(log2)
+\item g is differentiable at x=0 and g'(0) = -sin(log2)
+\item g is not differentiable at x=0
+\item g'(0) =  cos(log2)
+\end{enumerate}
+37. \[\lim_{x\to\infty} \left(\frac{(n+1)(n+2)...3n}{n^{2n}}\right)^{\frac{1}{n}} \] is equal to:
+\hfill{(JEE M 2016)}
+\begin{enumerate}[label=(\alph*)]
+\item $\frac{9}{e^2}$
+\item $3log3-2$
+\item $\frac{18}{e^4}$
+\item $\frac{27}{e^2}$
+\end{enumerate}
+38. Let p = \[\lim_{x\to0^+} \left(1+tan^2\sqrt{x}\right)^{\frac{1}{2x}} \] then $logp$ is equal to:
+\hfill{(JEE M 2016)}
+\begin{enumerate}[label=(\alph*)]
+\item $\frac{1}{2}$
+\item $\frac{1}{4}$
+\item 2
+\item 1
+\end{enumerate}
+39. \[\lim_{x\to\frac{\pi}{2}} \frac{cotx-cosx}{(\pi -2x)^3} \] equals 
+\hfill{(JEE M 2017)}
+\begin{enumerate}[label=(\alph*)]
+\item $\frac{1}{4}$
+\item $\frac{1}{24}$
+\item $\frac{1}{16}$
+\item $\frac{1}{8}$
+\end{enumerate}
+40. For each $t\in\mathbb{R}$, let [t] be the greatest integer less than or equal to t. Then 
+\[\lim_{x\to0^+} x\left(\left[\frac{1}{x}\right]+\left[ \frac{2}{x}\right]+...+\left[ \frac{15}{x}\right]\right) \]
+\hfill{(JEE M 2018)}
+\begin{enumerate}[label=(\alph*)]
+\item is equal to 15
+\item is equal to 120
+\item $does not exist(in \mathbb{R})$
+\item is equal to 0
+\end{enumerate}
+41. For S =  $t\in\mathbb{R}:f(x)=|x-\pi|(e^{|x|}-1)sin|x|$ is not differentiable at t. Then the set S is equal to:
+
+\hfill{(JEE M 2018)}
+\begin{enumerate}[label=(\alph*)]
+\item {$0$}
+\item ${\pi}$
+\item ${0,\pi}$
+\item ${\emptyset}$(an empty set) 
+\end{enumerate}
+42.  
+\[\lim_{y\to0} \frac{\sqrt{1+\sqrt{1+y^4}}-\sqrt{2}}{y^4} \]
+\hfill{(JEE M 2019- 9 Jan(M))}
+\begin{enumerate}[label=(\alph*)]
+\item exists and equals $\frac{1}{4\sqrt{2}}$
+\item exists and equals $\frac{1}{2\sqrt{2}(\sqrt{2}+1)}$
+\item exists and equals $\frac{1}{2\sqrt{2}}$
+\item does not exist
+\end{enumerate}
+43. Let $f : \mathbb{R}\to\mathbb{R}$ is a function defined as
+
+\hfill{(JEE M 2019- 9 Jan(M))}
+
+\begin{equation}
+    f(x)= 
+    \begin{cases}
+    5, \hfill{if x \le 1}\\
+    a + bx, \hfill{if 1 < 3}\\
+    b + 5x, \hfill{if 3 \le x < 5}\\
+    30, \hfill{if x \ge 5}
+    \end{cases}
+\end{equation}
+
+\begin{enumerate}[label=(\alph*)]
+\item continuous if $a=5$ and $b=5$
+\item continuous if $a=-5$ and $b=10$
+\item continuous if $a=0$ and $b=5$
+\item not continuous for any values of a and b
+\end{enumerate}
+44. If the function f defined on $ \left( \frac{\pi}{3}, \frac{\pi}{6}\right)$ by
+\begin{equation}
+    f(x)= 
+    \begin{cases}
+    \frac{\sqrt{2} cosx-1}{cotx-1}, x \ne \frac{\pi}{4}\\
+    k, x = \frac{\pi}{4}\\
+    \end{cases}
+\end{equation}
+\hfill{(JEE M 2019- 9 April(M))}
+\begin{enumerate}[label=(\alph*)]
+\item $2$
+\item $\frac{1}{2}$
+\item $1$
+\item $\frac{1}{\sqrt{2}}$
+\end{enumerate}
+45. Let $f(x)= 15-|x-10|, x\to\mathbb{R}$. Then the set of all values of x, at which the function, g(x)=f(f(x)) is not differentiable, is:
+\hfill{(JEE M 2019- 9 April(M))}
+\begin{enumerate}[label=(\alph*)]
+\item {5,10,15}
+\item {10,15}
+\item {5,10,15,20}
+\item {10}
+\end{enumerate}
+
+\end{document}
+https://github.com/gadepall/matgeo/blob/main/chapters%2Ftriangle%2Fvector.tex
+https://github.com/gadepall/matgeo/blob/main/chapters%2Ftriangle%2Fvector.tex
+#Code by GVV Sharma
+#July 25, 2024
+#released under GNU GPL
+#Line intersection
+
+
+import sys                                          #for path to external scripts
+sys.path.insert(0, '/root/matgeo/codes/CoordGeo')        #path to my scripts
+import numpy as np
+import mpmath as mp
+import numpy.linalg as LA
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+#local imports
+from line.funcs import *
+from triangle.funcs import *
+from conics.funcs import circ_gen
+
+
+#if using termux
+import subprocess
+import shlex
+#end if
+
+
+#Given Points
+#A = np.array(([3, 2])).reshape(-1,1) 
+#Line parameters
+n1 = np.array(([7, -2])).reshape(-1,1) 
+c1 = 5
+n2 = np.array(([8, 7])).reshape(-1,1) 
+c2 = 15 
+
+k1 = -1
+k2 = 1
+#Generating Lines
+x_A = line_norm(n1,c1,k1,k2)
+k1 = 0.…
+https://chatgpt.com/c/d700c30b-db0b-4f21-89f1-40c43a15afe1
+https://chatgpt.com/c/21a0cbc1-6cac-4bce-bffb-0cc6a20dd1b4
+https://github.com/shivrm/EE1030/blob/d4383398cde96f972e47be2762cb6768e50ade97/code/quiz1.py
+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
