@@ -1,0 +1,70 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\title{1.4.12}
+\author{EE24BTECH11055 - Sai Akhila Reddy Turpu}
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\textbf{Question}:\\
+The position vector of the point which divides the join of points $2\vec{a}-3\vec{b}$ and $\vec{a} + \vec{b}$ in the ratio $3:1$ is:
+\textbf{Solution:}
+\begin{table}[h]
+    \centering
+    \input{table/table.tex}
+    \caption{Given Vectors}
+    \label{tab:1}
+\end{table}
+Given\\
+Let $\vec{C}$ divides $\vec{A}$ and $\vec{B}$ in the ratio 3:1\\
+Using Section Formula(k=3)
+\begin{align}
+\vec{C} = \frac{1}{3+1} \brak{3\myvec{B} + \myvec{A}} \\
+\vec{C} = \brak{\frac{1}{4}} \brak{3\myvec{a} + \myvec{b}} + \brak{2\myvec{a} - 3\myvec{b}} \\
+\vec{C} = \frac{1}{4} \brak{5\myvec{a}}
+
+\end{align}
+Thus coordinates of $\vec{C}$ is 5/4\vec{a}. 
+
+\end{document}
