@@ -1,0 +1,5 @@
+\beamer@sectionintoc {2}{Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Given values}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Section formula}{5}{0}{2}
+\beamer@subsectionintoc {3}{3}{Verified values}{7}{0}{2}
